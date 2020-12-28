@@ -37,6 +37,8 @@ def update_figure(selected_year):
                      size="pop", color="continent", hover_name="country",
                      log_x=False, size_max=55)
 
+    fig.update_xaxes(range=[-5000, 60000])
+    fig.update_yaxes(range=[20, 100])
     fig.update_layout(transition_duration=500)
 
     return fig
